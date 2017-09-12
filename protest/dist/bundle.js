@@ -101,49 +101,61 @@
         frameWidth: 50,
         frameHeight: 50
     }, {
-        type: 'audio',
-        key: 'theme',
-        urls: __webpack_require__(310)
+        type: 'spritesheet',
+        key: 'langButtons',
+        url: __webpack_require__(310),
+        frameWidth: 50,
+        frameHeight: 50
+    }, {
+        type: 'spritesheet',
+        key: 'posterButton',
+        url: __webpack_require__(342),
+        frameWidth: 60,
+        frameHeight: 60
     }, {
         type: 'audio',
-        key: 'punch01',
+        key: 'theme',
         urls: __webpack_require__(311)
     }, {
         type: 'audio',
-        key: 'punch02',
+        key: 'punch01',
         urls: __webpack_require__(312)
     }, {
         type: 'audio',
-        key: 'applause',
+        key: 'punch02',
         urls: __webpack_require__(313)
     }, {
         type: 'audio',
-        key: 'boo',
+        key: 'applause',
         urls: __webpack_require__(314)
     }, {
         type: 'audio',
-        key: 'croud',
+        key: 'boo',
         urls: __webpack_require__(315)
     }, {
         type: 'audio',
-        key: 'cough01',
+        key: 'croud',
         urls: __webpack_require__(316)
     }, {
         type: 'audio',
-        key: 'cough02',
+        key: 'cough01',
         urls: __webpack_require__(317)
     }, {
         type: 'audio',
-        key: 'scream03',
+        key: 'cough02',
         urls: __webpack_require__(318)
     }, {
         type: 'audio',
-        key: 'truck',
+        key: 'scream03',
         urls: __webpack_require__(319)
     }, {
         type: 'audio',
-        key: 'pick',
+        key: 'truck',
         urls: __webpack_require__(320)
+    }, {
+        type: 'audio',
+        key: 'pick',
+        urls: __webpack_require__(321)
     }],
     level1: [{
         type: 'spritesheet',
@@ -160,7 +172,7 @@
     }, {
         type: 'spritesheet',
         key: 'cop',
-        url: __webpack_require__(321),
+        url: __webpack_require__(322),
         frameWidth: 44,
         frameHeight: 49
     }, {
@@ -214,7 +226,7 @@
     }, {
         type: 'image',
         key: 'ground',
-        url: __webpack_require__(322),
+        url: __webpack_require__(323),
         overwrite: false
     }],
     level2: [{
@@ -232,13 +244,13 @@
     }, {
         type: 'spritesheet',
         key: 'cop',
-        url: __webpack_require__(323),
+        url: __webpack_require__(324),
         frameWidth: 46,
         frameHeight: 54
     }, {
         type: 'spritesheet',
         key: 'swat',
-        url: __webpack_require__(324),
+        url: __webpack_require__(325),
         frameWidth: 30,
         frameHeight: 46
     }, {
@@ -292,7 +304,7 @@
     }, {
         type: 'image',
         key: 'ground',
-        url: __webpack_require__(325),
+        url: __webpack_require__(326),
         overwrite: false
     }]
 });
@@ -374,7 +386,7 @@ module.exports = __webpack_require__.p + "assets/28dbeb6c57f67cd17abbd912371bac9
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Prefab_js__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__constants_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__constants_js__ = __webpack_require__(18);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
@@ -468,7 +480,7 @@ var Protester = function (_Prefab) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants_js__ = __webpack_require__(18);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _DEFAULT_COLORS;
@@ -585,10 +597,12 @@ var FOV = function () {
 
 /***/ }),
 
-/***/ 21:
+/***/ 18:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* unused harmony export LANG_RUS */
+/* unused harmony export LANG_EN */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return FIELD_OFFSET; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return END_GAME_TIME_OUT; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return END_GAME_PLAYER_KILLED; });
@@ -609,6 +623,9 @@ var FOV = function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return PROTESTER_MODE_LEAVE; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return JOURNALIST_MODE_WANDER; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return JOURNALIST_MODE_SHOOTING; });
+var LANG_RUS = 'rus';
+var LANG_EN = 'en';
+
 var FIELD_OFFSET = {
     top: 150,
     right: 50,
@@ -650,9 +667,9 @@ var JOURNALIST_MODE_SHOOTING = 'shooting';
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__states_Boot_js__ = __webpack_require__(304);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__states_Loading_js__ = __webpack_require__(326);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__states_StartMenu_js__ = __webpack_require__(327);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__states_Game_js__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__states_Loading_js__ = __webpack_require__(327);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__states_StartMenu_js__ = __webpack_require__(328);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__states_Game_js__ = __webpack_require__(330);
 
 
 
@@ -686,6 +703,9 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 
+// import {
+//     LANG_RUS
+// } from '../constants.js';
 
 var Boot = function () {
     function Boot() {
@@ -698,12 +718,15 @@ var Boot = function () {
             this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
             this.scale.pageAlignHorizontally = true;
             this.scale.pageAlignVertically = true;
+            this.scale.forceOrientation(true, false);
+
+            // this.game.mz = {
+            //     lang: LANG_RUS
+            // };
         }
     }, {
         key: 'preload',
-        value: function preload() {
-            // this.load.image('loader', 'assets/loader.png');
-        }
+        value: function preload() {}
     }, {
         key: 'create',
         value: function create() {
@@ -759,116 +782,123 @@ module.exports = __webpack_require__.p + "assets/14ca0f6714021de1e9776c79ad48e91
 /***/ 310:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/31269e05cd13ab095ae3bbb217d2f567.mp3";
+module.exports = __webpack_require__.p + "assets/91c72ca53d459471e351e7a7e4a15e0b.png";
 
 /***/ }),
 
 /***/ 311:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/0cb89b881decdf87d1ccaba4ae7aaffb.mp3";
+module.exports = __webpack_require__.p + "assets/31269e05cd13ab095ae3bbb217d2f567.mp3";
 
 /***/ }),
 
 /***/ 312:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/dca004f04dec60da50cca8fecc4161f2.mp3";
+module.exports = __webpack_require__.p + "assets/0cb89b881decdf87d1ccaba4ae7aaffb.mp3";
 
 /***/ }),
 
 /***/ 313:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/3745bf01cd4446437f37de7991ad805b.mp3";
+module.exports = __webpack_require__.p + "assets/dca004f04dec60da50cca8fecc4161f2.mp3";
 
 /***/ }),
 
 /***/ 314:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/52b53826ba253bf501d879893845b5f4.mp3";
+module.exports = __webpack_require__.p + "assets/3745bf01cd4446437f37de7991ad805b.mp3";
 
 /***/ }),
 
 /***/ 315:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/15a327358f08be2e673ef27c2e5dcaa1.mp3";
+module.exports = __webpack_require__.p + "assets/52b53826ba253bf501d879893845b5f4.mp3";
 
 /***/ }),
 
 /***/ 316:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/6632e8a1ef01b6e295413e6fa1606858.mp3";
+module.exports = __webpack_require__.p + "assets/15a327358f08be2e673ef27c2e5dcaa1.mp3";
 
 /***/ }),
 
 /***/ 317:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/2db995ce7f0661c455b95602348d7c50.mp3";
+module.exports = __webpack_require__.p + "assets/6632e8a1ef01b6e295413e6fa1606858.mp3";
 
 /***/ }),
 
 /***/ 318:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/05b4ea2cf7bcddf26622cdaafb40b881.mp3";
+module.exports = __webpack_require__.p + "assets/2db995ce7f0661c455b95602348d7c50.mp3";
 
 /***/ }),
 
 /***/ 319:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/b2187268a6f521f79c03adf9bedcf458.mp3";
+module.exports = __webpack_require__.p + "assets/05b4ea2cf7bcddf26622cdaafb40b881.mp3";
 
 /***/ }),
 
 /***/ 320:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/dd570435d42a0e42441e1fc12af0f4fa.mp3";
+module.exports = __webpack_require__.p + "assets/b2187268a6f521f79c03adf9bedcf458.mp3";
 
 /***/ }),
 
 /***/ 321:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/d98ae72532ed2e0fe2b7596a57c1cbac.png";
+module.exports = __webpack_require__.p + "assets/dd570435d42a0e42441e1fc12af0f4fa.mp3";
 
 /***/ }),
 
 /***/ 322:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/7780fada5b5def9a73f068e7dee87e98.jpg";
+module.exports = __webpack_require__.p + "assets/d98ae72532ed2e0fe2b7596a57c1cbac.png";
 
 /***/ }),
 
 /***/ 323:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/733d7ab8b793f60f4c77b9d837fa3693.png";
+module.exports = __webpack_require__.p + "assets/7780fada5b5def9a73f068e7dee87e98.jpg";
 
 /***/ }),
 
 /***/ 324:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/d0797776e88d180a0467e06d6899a8ae.png";
+module.exports = __webpack_require__.p + "assets/733d7ab8b793f60f4c77b9d837fa3693.png";
 
 /***/ }),
 
 /***/ 325:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "assets/ba54524471c2d26696759b97325dc4fd.jpg";
+module.exports = __webpack_require__.p + "assets/d0797776e88d180a0467e06d6899a8ae.png";
 
 /***/ }),
 
 /***/ 326:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/ba54524471c2d26696759b97325dc4fd.jpg";
+
+/***/ }),
+
+/***/ 327:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -953,15 +983,17 @@ var Loading = function () {
 
 /***/ }),
 
-/***/ 327:
+/***/ 328:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__levels_js__ = __webpack_require__(328);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__levels_js__ = __webpack_require__(329);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__assets_pack_js__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constants_js__ = __webpack_require__(18);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 
 
 
@@ -981,7 +1013,7 @@ var StartMenu = function () {
         value: function create() {
             this.game.world.resize(this.game.width, this.game.height);
 
-            this.title = this.game.add.text(this.world.centerX, 2 / 3 * this.world.centerY, 'Peaceful Protest');
+            this.title = this.game.add.text(this.game.world.centerX, 40, 'Peaceful Protest');
             this.title.anchor.setTo(0.5);
 
             this.level1Button = this.game.add.button(150, this.world.centerY, 'level02', this.handleClickPlay.bind(this, 'level1'));
@@ -989,7 +1021,20 @@ var StartMenu = function () {
 
             this.level2Button = this.game.add.button(this.world.width - 150, this.world.centerY, 'level01', this.handleClickPlay.bind(this, 'level2'));
             this.level2Button.anchor.setTo(0.5);
+
+            // this.langButton = this.game.add.button(
+            //     this.game.world.width - 10,
+            //     10,
+            //     'langButtons',
+            //     this.handleClickLang.bind(this)
+            // );
+            // this.langButton.anchor(1, 0);
         }
+
+        // update() {
+        //     // this.langButton.frame = this.game.mz.lang === LANG_RUS ? 0 : 1;
+        // }
+
     }, {
         key: 'handleClickPlay',
         value: function handleClickPlay(level) {
@@ -998,6 +1043,9 @@ var StartMenu = function () {
                 nextState: ['Game', true, false, __WEBPACK_IMPORTED_MODULE_0__levels_js__["a" /* default */][level]]
             });
         }
+    }, {
+        key: 'handleClickLang',
+        value: function handleClickLang() {}
     }]);
 
     return StartMenu;
@@ -1007,7 +1055,7 @@ var StartMenu = function () {
 
 /***/ }),
 
-/***/ 328:
+/***/ 329:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1017,9 +1065,9 @@ var StartMenu = function () {
         worldWidth: 600,
         worldHeight: 600,
         duration: 3 * 60, // s
-        winningScore: 75,
+        winningThreshold: 75,
         cops: {
-            count: [[40, 0], [60, 1], [100, 2]],
+            count: [[60, 0], [85, 1], [100, 2]],
             speed: {
                 value: 50,
                 running: 1.7
@@ -1073,9 +1121,9 @@ var StartMenu = function () {
         worldWidth: 800,
         worldHeight: 800,
         duration: 4 * 60, // s
-        winningScore: 75,
+        winningThreshold: 75,
         cops: {
-            count: [[40, 3], [60, 4], [100, 5]],
+            count: [[40, 1], [50, 2], [60, 3], [100, 4]],
             speed: {
                 value: 60,
                 running: 1.7
@@ -1090,8 +1138,8 @@ var StartMenu = function () {
             speed: {
                 value: 200
             },
-            frequency: 10000,
-            scoreThreshold: 50
+            frequency: 15000,
+            scoreThreshold: 60
         },
         press: {
             count: 5,
@@ -1106,7 +1154,7 @@ var StartMenu = function () {
         },
         protesters: {
             count: {
-                start: 30,
+                start: 20,
                 max: 60,
                 add: 10
             },
@@ -1115,7 +1163,7 @@ var StartMenu = function () {
                 value: 60
             },
             mood: 0.25,
-            moodUp: 0.002,
+            moodUp: 0.0024,
             moodDown: 0.0001,
             dropPoster: 0.1
         },
@@ -1126,7 +1174,7 @@ var StartMenu = function () {
                 clickSpeedUp: 1.05,
                 running: 1.5
             },
-            radius: 100,
+            radius: 120,
             stamina: 200,
             staminaCooldown: 5, // s
             powerUp: 0.1,
@@ -1137,25 +1185,28 @@ var StartMenu = function () {
 
 /***/ }),
 
-/***/ 329:
+/***/ 330:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__objects_Player_js__ = __webpack_require__(330);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__objects_NPCProtester_js__ = __webpack_require__(331);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objects_Cop_js__ = __webpack_require__(332);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__objects_Journalist_js__ = __webpack_require__(333);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__objects_SWATSquad_js__ = __webpack_require__(334);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__objects_Shield_js__ = __webpack_require__(335);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__objects_ScoreMeter_js__ = __webpack_require__(336);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__objects_PauseMenu_js__ = __webpack_require__(337);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__objects_EndMenu_js__ = __webpack_require__(338);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__constants_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__objects_Player_js__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__objects_NPCProtester_js__ = __webpack_require__(332);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objects_Cop_js__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__objects_Journalist_js__ = __webpack_require__(334);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__objects_SWATSquad_js__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__objects_Shield_js__ = __webpack_require__(336);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__objects_GameInterface_js__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__objects_PauseMenu_js__ = __webpack_require__(339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__objects_EndMenu_js__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__constants_js__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__utils_js__ = __webpack_require__(341);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
 
 
 
@@ -1204,11 +1255,8 @@ var Game = function () {
                     player: null,
                     swat: null,
                     shield: null,
-                    score: null,
-                    textTimer: null,
-                    textProtestersCount: null,
                     bgTile: null,
-                    buttonSound: null,
+                    interface: null,
                     audio: {},
                     pauseMenu: null,
                     endMenu: null
@@ -1216,7 +1264,8 @@ var Game = function () {
                 arrays: {
                     protesters: [],
                     cops: [],
-                    press: []
+                    press: [],
+                    borders: []
                 },
                 groups: {
                     actors: null,
@@ -1224,14 +1273,15 @@ var Game = function () {
                     droppedPosters: null,
                     copsFOV: null,
                     pressFOV: null,
-                    playerFOV: null,
-                    menu: null
+                    playerFOV: null
                 }
             };
         }
     }, {
         key: 'create',
         value: function create() {
+            var _this = this;
+
             this.game.stage.backgroundColor = '#ccc';
 
             this.game.world.resize(this.mz.level.worldWidth, this.mz.level.worldHeight);
@@ -1259,18 +1309,32 @@ var Game = function () {
             for (var i = 0; i < this.game.world.width; i += 300) {
                 var autoSprite = this.game.add.sprite(i, 120, 'auto');
                 autoSprite.anchor.set(0, 1);
-                this.game.physics.arcade.enable(autoSprite);
-                autoSprite.body.setSize(autoSprite.width, autoSprite.height - 10);
-                autoSprite.body.immovable = true;
                 this.mz.groups.cars.add(autoSprite);
             }
 
             this.mz.groups.actors = this.game.add.group();
 
+            // player
+            this.mz.objects.player = new __WEBPACK_IMPORTED_MODULE_0__objects_Player_js__["a" /* default */](_extends({
+                game: this.game,
+                x: this.game.world.centerX,
+                y: this.game.world.centerY,
+                fovGroup: this.mz.groups.playerFOV
+            }, this.mz.level.player, {
+                onDropPoster: this.handleDropPoster.bind(this)
+            }));
+            this.game.camera.follow(this.mz.objects.player.sprite);
+            this.mz.groups.actors.add(this.mz.objects.player.sprite);
+
             // top borders
             for (var _i = 0; _i < this.game.world.width; _i += 100) {
-                var sprite = this.game.add.sprite(_i, __WEBPACK_IMPORTED_MODULE_9__constants_js__["i" /* FIELD_OFFSET */].top - 25, 'border', 0, this.mz.groups.actors);
-                sprite.anchor.set(0, 0.5);
+                var offset = Math.max(0, 50 - this.mz.objects.player.sprite.height);
+                var borderTop = this.game.add.sprite(_i, __WEBPACK_IMPORTED_MODULE_9__constants_js__["i" /* FIELD_OFFSET */].top - 25, 'border', 0, this.mz.groups.actors);
+                borderTop.anchor.set(0, 0.5);
+                this.game.physics.arcade.enable(borderTop);
+                borderTop.body.setSize(borderTop.width, offset);
+                borderTop.body.immovable = true;
+                this.mz.arrays.borders.push(borderTop);
             }
 
             // cops
@@ -1290,7 +1354,7 @@ var Game = function () {
             this.mz.objects.shield = new __WEBPACK_IMPORTED_MODULE_5__objects_Shield_js__["a" /* default */]({
                 game: this.game,
                 speed: {
-                    value: 400
+                    value: 300
                 }
             });
 
@@ -1319,59 +1383,28 @@ var Game = function () {
             // protesters
             this.createProtesters();
 
-            // player
-            this.mz.objects.player = new __WEBPACK_IMPORTED_MODULE_0__objects_Player_js__["a" /* default */](_extends({
+            // interface
+            this.mz.objects.interface = new __WEBPACK_IMPORTED_MODULE_6__objects_GameInterface_js__["a" /* default */]({
                 game: this.game,
-                x: this.game.world.centerX,
-                y: this.game.world.centerY,
-                fovGroup: this.mz.groups.playerFOV
-            }, this.mz.level.player, {
-                onDropPoster: this.handleDropPoster.bind(this)
-            }));
-            this.game.camera.follow(this.mz.objects.player.sprite);
-            this.mz.groups.actors.add(this.mz.objects.player.sprite);
-
-            this.mz.groups.menu = this.game.add.group();
-            this.mz.groups.menu.fixedToCamera = true;
-
-            this.mz.objects.score = new __WEBPACK_IMPORTED_MODULE_6__objects_ScoreMeter_js__["a" /* default */]({
-                game: this.game,
-                x: 10,
-                y: this.game.height - 10,
-                width: this.game.width - 20,
-                parentGroup: this.mz.groups.menu,
-                winPoint: this.mz.level.winningScore
+                onTogglePoster: function onTogglePoster() {
+                    _this.mz.objects.player.togglePoster();
+                }
             });
 
             // bottom borders
             for (var _i3 = 0; _i3 < this.game.world.width; _i3 += 100) {
-                var _sprite = this.game.add.sprite(_i3, this.game.world.height - 25, 'border', 0, this.mz.groups.actors);
-                _sprite.anchor.set(0, 0.5);
+                var _offset = Math.max(0, 50 - this.mz.objects.player.sprite.height);
+                var borderBottom = this.game.add.sprite(_i3, this.game.world.height - 25, 'border', 0, this.mz.groups.actors);
+                borderBottom.anchor.set(0, 0.5);
+                this.game.physics.arcade.enable(borderBottom);
+                borderBottom.body.setSize(borderBottom.width, _offset, 0, borderBottom.height - _offset);
+                borderBottom.body.immovable = true;
+                this.mz.arrays.borders.push(borderBottom);
             }
 
             this.mz.objects.timer = this.game.time.create();
             this.mz.objects.timer.loop(Phaser.Timer.SECOND, this.updateTimer, this);
             this.mz.objects.timer.start();
-
-            this.mz.objects.textTimer = this.game.add.text(this.game.width - 10, 20, '', {
-                font: '25px Arial',
-                fill: '#fff',
-                align: 'right'
-            });
-            this.mz.objects.textTimer.anchor.set(1, 0.5);
-            this.mz.objects.textTimer.setShadow(2, 2, 'rgba(0, 0, 0, .5)', 0);
-            this.mz.groups.menu.add(this.mz.objects.textTimer);
-
-            this.mz.objects.textProtestersCount = this.game.add.text(this.game.width - 10, 60, '', {
-                font: '25px Arial',
-                fill: '#fff',
-                align: 'right'
-            });
-            this.mz.objects.textProtestersCount.anchor.set(1, 0.5);
-            this.mz.objects.textProtestersCount.setShadow(2, 2, 'rgba(0, 0, 0, .5)', 0);
-            this.mz.groups.menu.add(this.mz.objects.textProtestersCount);
-
-            this.mz.objects.buttonSound = this.game.add.button(0, 0, 'soundButtons', this.handleClickSound, this, 1, 1, 1, 1, this.mz.groups.menu);
 
             // pause menu
             this.mz.objects.pauseMenu = new __WEBPACK_IMPORTED_MODULE_7__objects_PauseMenu_js__["a" /* default */]({ game: this.game });
@@ -1397,7 +1430,7 @@ var Game = function () {
     }, {
         key: 'update',
         value: function update() {
-            var _this = this;
+            var _this2 = this;
 
             // update background
             this.mz.objects.bgTile.tilePosition.set(-this.game.camera.x, -this.game.camera.y);
@@ -1405,8 +1438,6 @@ var Game = function () {
             if (!this.mz.gameEnded) {
                 this.playRandomSound();
             }
-
-            this.mz.objects.buttonSound.frame = this.game.sound.mute ? 1 : 0;
 
             // update player
             this.mz.objects.player.update();
@@ -1420,7 +1451,7 @@ var Game = function () {
                 var sprite = this.mz.arrays.protesters[i];
                 if (!sprite.alive) {
                     if (this.mz.protesters.toRevive !== 0) {
-                        var mood = Math.max(lastTickMeanMood, this.mz.level.protesters.mood);
+                        var mood = this.game.math.clamp(lastTickMeanMood, this.mz.level.protesters.mood, (this.mz.level.winningThreshold - 1) / 100);
                         this.reviveProtester({
                             sprite: sprite,
                             mood: mood
@@ -1440,11 +1471,16 @@ var Game = function () {
             this.mz.protesters.toRevive = 0;
 
             this.mz.protesters.meanMood = this.mz.protesters.alive !== 0 ? this.mz.protesters.meanMood / this.mz.protesters.alive : 0;
-            this.mz.score = 100 * (0.5 * this.mz.protesters.alive / this.mz.level.protesters.count.max + 0.5 * this.mz.protesters.meanMood);
+            this.mz.score = 100 * this.game.math.clamp(100 * (0.5 * this.mz.protesters.alive / this.mz.level.protesters.count.max + 0.5 * this.mz.protesters.meanMood) / this.mz.level.winningThreshold, 0, 1);
 
-            // draw score
+            // update interface
             if (!this.mz.gameEnded) {
-                this.mz.objects.score.update(this.mz.score);
+                this.mz.objects.interface.update({
+                    score: this.mz.score,
+                    protestersAlive: this.mz.protesters.alive,
+                    protestersTotal: this.mz.level.protesters.count.max,
+                    meanMood: this.mz.protesters.meanMood
+                });
             }
 
             // update journalists
@@ -1452,8 +1488,8 @@ var Game = function () {
                 var journalist = journalistSprite.mz;
                 var newTarget = null;
 
-                if (!_this.mz.gameEnded && journalist.FOV.isActive && _this.mz.objects.player.showPoster && journalist.FOV.containsPoint(_this.mz.objects.player.sprite.body.center)) {
-                    newTarget = _this.mz.objects.player.sprite;
+                if (!_this2.mz.gameEnded && journalist.FOV.isActive && _this2.mz.objects.player.showPoster && journalist.FOV.containsPoint(_this2.mz.objects.player.sprite.body.center)) {
+                    newTarget = _this2.mz.objects.player.sprite;
                 }
 
                 if (newTarget) {
@@ -1516,7 +1552,7 @@ var Game = function () {
                             continue;
                         }
                         if (protester.sprite === cop.target || protester.showPoster) {
-                            var distanceToProtesterSq = this.getDistanceSq(copSprite, protester.sprite);
+                            var distanceToProtesterSq = this.getDistanceSq(copSprite.body.center, protester.sprite.body.center);
                             // give higher priority to current target
                             if (protester.sprite === cop.target) {
                                 distanceToProtesterSq *= 3 / 4;
@@ -1539,76 +1575,67 @@ var Game = function () {
                 cop.update();
             }
 
-            // cops vs protesters collision
-            this.game.physics.arcade.overlap(this.mz.arrays.protesters, this.mz.arrays.cops, this.proceedToJail, function (protesterSprite, copSprite) {
-                return copSprite.mz.target === protesterSprite && protesterSprite.mz.mode !== __WEBPACK_IMPORTED_MODULE_9__constants_js__["n" /* PROTESTER_MODE_ARRESTED */];
-            }, this);
+            // protesters collision
+            for (var _i6 = 0; _i6 <= this.mz.arrays.protesters.length; _i6++) {
+                var protesterSprite = _i6 === this.mz.arrays.protesters.length ? this.mz.objects.player.sprite : this.mz.arrays.protesters[_i6];
 
-            // swat vs protesters collision
-            if (this.mz.objects.swat) {
-                this.game.physics.arcade.overlap(this.mz.objects.swat.sprites, this.mz.arrays.protesters, function (swatSprite, protesterSprite) {
-                    _this.arrest(protesterSprite, swatSprite);
-                }, function (swatSprite, protesterSprite) {
-                    return swatSprite.children.length === 0 && protesterSprite.mz.mode !== __WEBPACK_IMPORTED_MODULE_9__constants_js__["n" /* PROTESTER_MODE_ARRESTED */];
-                });
+                if (!protesterSprite.alive || protesterSprite.mz.mode === __WEBPACK_IMPORTED_MODULE_9__constants_js__["n" /* PROTESTER_MODE_ARRESTED */]) {
+                    continue;
+                }
+
+                var protesterBounds = protesterSprite.getBounds();
+
+                // vs cops
+                for (var j = 0; j < this.mz.arrays.cops.length; j++) {
+                    var _copSprite = this.mz.arrays.cops[j];
+                    if (!_copSprite.alive || _copSprite.mz.target !== protesterSprite || !Phaser.Rectangle.intersects(protesterBounds, _copSprite.getBounds())) {
+                        continue;
+                    }
+                    this.proceedToJail(protesterSprite, _copSprite);
+                }
+
+                // vs swat
+                if (this.mz.objects.swat) {
+                    for (var _j = 0; _j < this.mz.objects.swat.sprites.length; _j++) {
+                        var swatSprite = this.mz.objects.swat.sprites[_j];
+                        if (swatSprite.children !== 0 || !Phaser.Rectangle.intersects(protesterBounds, swatSprite.getBounds())) {
+                            continue;
+                        }
+                        this.arrest(protesterSprite, swatSprite);
+                    }
+                }
+
+                // vs shield
+                if (this.mz.gameEnded) {
+                    this.game.physics.arcade.collide(protesterSprite, this.mz.objects.shield.sprite, function (protesterSprite) {
+                        protesterSprite.body.collideWorldBounds = false;
+                        if (protesterSprite.health === 1) {
+                            _this2.beatUpProtester(protesterSprite);
+                        }
+                    });
+                }
             }
-
-            // cars vs protesters collision
-            this.game.physics.arcade.overlap(this.mz.arrays.protesters, this.mz.groups.cars, function (protesterSprite) {
-                protesterSprite.mz.kill();
-            }, function (protesterSprite) {
-                return protesterSprite.mz.mode === __WEBPACK_IMPORTED_MODULE_9__constants_js__["n" /* PROTESTER_MODE_ARRESTED */];
-            });
 
             // player collisions
             if (this.mz.objects.player.mode !== __WEBPACK_IMPORTED_MODULE_9__constants_js__["n" /* PROTESTER_MODE_ARRESTED */]) {
                 // vs posters
                 this.mz.groups.droppedPosters.forEachAlive(function (posterSprite) {
-                    if (Phaser.Rectangle.intersects(posterSprite.getBounds(), _this.mz.objects.player.sprite.getBounds())) {
-                        _this.mz.objects.audio.pick.play('', 0, 0.25);
-                        _this.mz.objects.player.powerUp();
+                    if (Phaser.Rectangle.intersects(posterSprite.getBounds(), _this2.mz.objects.player.sprite.getBounds())) {
+                        _this2.mz.objects.audio.pick.play('', 0, 0.25);
+                        _this2.mz.objects.player.powerUp();
                         posterSprite.kill();
                     }
                 });
-
-                // vs swat
-                if (this.mz.objects.swat) {
-                    this.game.physics.arcade.overlap(this.mz.objects.player.sprite, this.mz.objects.swat.sprites, this.arrest, function (playerSprite, swatSprite) {
-                        return swatSprite.children.length === 0;
-                    }, this);
-                }
-
-                // vs cops
-                this.game.physics.arcade.overlap(this.mz.objects.player.sprite, this.mz.arrays.cops, function (playerSprite, copSprite) {
-                    _this.mz.events.fieldClickHandler.events.onInputUp.remove(_this.handleClick, _this);
-                    _this.proceedToJail(playerSprite, copSprite);
-                }, function (playerSprite, copSprite) {
-                    return copSprite.mz.target === playerSprite;
-                });
             }
 
-            // player vs cars collision
-            this.game.physics.arcade.collide(this.mz.objects.player.sprite, this.mz.groups.cars, function (playerSprite) {
-                if (playerSprite.mz.mode === __WEBPACK_IMPORTED_MODULE_9__constants_js__["n" /* PROTESTER_MODE_ARRESTED */]) {
-                    playerSprite.mz.kill();
-                }
-            });
-
-            // player vs shield collision
-            this.game.physics.arcade.collide(this.mz.objects.player.sprite, this.mz.objects.shield.sprite, function (playerSprite) {
-                playerSprite.body.collideWorldBounds = false;
-                if (playerSprite.health === 1) {
-                    _this.beatUpProtester(playerSprite);
-                }
-            });
+            // player vs borders collision
+            this.game.physics.arcade.collide(this.mz.objects.player.sprite, this.mz.arrays.borders);
 
             this.mz.groups.actors.sort('y', Phaser.Group.SORT_ASCENDING);
 
             if (!this.mz.gameEnded) {
                 this.checkWin();
             }
-
-            this.mz.objects.textProtestersCount.setText('Protesters count: ' + String(this.mz.protesters.alive).padStart(2, '0') + ' / ' + this.mz.level.protesters.count.max);
 
             // events
             if (this.mz.events.keys.esc.justUp) {
@@ -1618,10 +1645,11 @@ var Game = function () {
     }, {
         key: 'render',
         value: function render() {
+            // this.game.debug.cameraInfo(this.game.camera, 32, 32);
             // this.game.debug.body(this.mz.objects.player.sprite);
             // this.game.debug.bodyInfo(this.mz.objects.player.sprite, 0, 100);
 
-            // this.mz.groups.cars.forEachExists(sprite => {
+            // this.mz.arrays.borders.forEach(sprite => {
             //     this.game.debug.body(sprite);
             // });
             // this.mz.arrays.cops.forEach(sprite => {
@@ -1665,11 +1693,6 @@ var Game = function () {
             this.mz.protesters.toRevive += this.mz.level.protesters.count.add;
         }
     }, {
-        key: 'handleClickSound',
-        value: function handleClickSound() {
-            this.game.sound.mute = !this.game.sound.mute;
-        }
-    }, {
         key: 'handlePause',
         value: function handlePause() {
             if (this.game.paused) {
@@ -1691,7 +1714,7 @@ var Game = function () {
         key: 'updateTimer',
         value: function updateTimer() {
             this.mz.timePassed++;
-            this.mz.objects.textTimer.setText(this.getFormattedTime(this.mz.timePassed));
+            this.mz.objects.interface.updateTimer(__WEBPACK_IMPORTED_MODULE_10__utils_js__["a" /* getFormattedTime */](this.mz.level.duration - this.mz.timePassed));
         }
     }, {
         key: 'createCops',
@@ -1797,25 +1820,25 @@ var Game = function () {
     }, {
         key: 'proceedToJail',
         value: function proceedToJail(protesterSprite, copSprite) {
-            var _this2 = this;
+            var _this3 = this;
 
             var closestCarCoords = null;
             var minDistanceSq = Infinity;
             this.mz.groups.cars.forEach(function (carSprite) {
                 var carCoords = {
                     x: (carSprite.right + carSprite.left) / 2,
-                    y: (carSprite.bottom + carSprite.top) / 2
+                    y: carSprite.bottom + 20
                 };
-                var distanceToCarSq = _this2.getDistanceSq(copSprite, carCoords);
+                var distanceToCarSq = _this3.getDistanceSq(copSprite, carCoords);
                 if (distanceToCarSq < minDistanceSq) {
                     closestCarCoords = carCoords;
                     minDistanceSq = distanceToCarSq;
                 }
             });
 
-            copSprite.mz.setMode(__WEBPACK_IMPORTED_MODULE_9__constants_js__["a" /* COP_MODE_CONVOY */], { jailCoords: closestCarCoords });
-
             this.arrest(protesterSprite, copSprite);
+
+            copSprite.mz.setMode(__WEBPACK_IMPORTED_MODULE_9__constants_js__["a" /* COP_MODE_CONVOY */], { jailCoords: closestCarCoords });
         }
     }, {
         key: 'arrest',
@@ -1823,6 +1846,7 @@ var Game = function () {
             this.beatUpProtester(protesterSprite);
 
             copSprite.addChild(protesterSprite);
+
             if (protesterSprite.name === 'player') {
                 this.game.camera.follow(copSprite);
             }
@@ -1832,7 +1856,9 @@ var Game = function () {
                 y: protesterSprite.body.halfHeight
             });
 
-            this.mz.protesters.arrested++;
+            if (protesterSprite.name !== 'player') {
+                this.mz.protesters.arrested++;
+            }
         }
     }, {
         key: 'launchSWAT',
@@ -1855,7 +1881,7 @@ var Game = function () {
         key: 'launchShield',
         value: function launchShield() {
             this.mz.objects.shield.setMode(__WEBPACK_IMPORTED_MODULE_9__constants_js__["q" /* SHIELD_MODE_DRIVE */], {
-                y: this.mz.objects.player.sprite.y
+                y: this.game.height / 2 + this.game.camera.y
             });
         }
     }, {
@@ -1865,7 +1891,7 @@ var Game = function () {
                 this.endGame(__WEBPACK_IMPORTED_MODULE_9__constants_js__["g" /* END_GAME_TIME_OUT */]);
             } else if (this.mz.score === 0) {
                 this.endGame(__WEBPACK_IMPORTED_MODULE_9__constants_js__["f" /* END_GAME_PROTEST_RATE */]);
-            } else if (this.mz.score >= this.mz.level.winningScore) {
+            } else if (this.mz.score === 100) {
                 this.endGame(__WEBPACK_IMPORTED_MODULE_9__constants_js__["h" /* END_GAME_WIN */]);
             } else if (this.mz.objects.player.mode === __WEBPACK_IMPORTED_MODULE_9__constants_js__["n" /* PROTESTER_MODE_ARRESTED */] || !this.mz.objects.player.sprite.alive) {
                 this.endGame(__WEBPACK_IMPORTED_MODULE_9__constants_js__["e" /* END_GAME_PLAYER_KILLED */]);
@@ -1881,7 +1907,7 @@ var Game = function () {
             this.mz.objects.endMenu = new __WEBPACK_IMPORTED_MODULE_8__objects_EndMenu_js__["a" /* default */]({
                 game: this.game,
                 mode: mode,
-                score: this.mz.objects.score.group,
+                score: this.mz.objects.interface.score.group,
                 stats: {
                     time: this.mz.timePassed,
                     alive: this.mz.protesters.alive,
@@ -1892,7 +1918,7 @@ var Game = function () {
             });
 
             this.game.camera.unfollow();
-            this.mz.groups.menu.killAll();
+            this.mz.objects.interface.kill();
             this.mz.objects.timer.stop();
             this.mz.events.fieldClickHandler.kill();
 
@@ -1919,6 +1945,7 @@ var Game = function () {
                             this.mz.arrays.protesters.forEach(function (sprite) {
                                 sprite.mz.moodDown(1);
                             });
+                            this.launchShield();
                             break;
                         }
                     case __WEBPACK_IMPORTED_MODULE_9__constants_js__["f" /* END_GAME_PROTEST_RATE */]:
@@ -1968,13 +1995,6 @@ var Game = function () {
         value: function getRandomCoordinateY() {
             return this.game.math.clamp(this.game.world.randomY, __WEBPACK_IMPORTED_MODULE_9__constants_js__["i" /* FIELD_OFFSET */].top, this.game.world.height - __WEBPACK_IMPORTED_MODULE_9__constants_js__["i" /* FIELD_OFFSET */].bottom);
         }
-    }, {
-        key: 'getFormattedTime',
-        value: function getFormattedTime(secondsPassed) {
-            var s = this.mz.level.duration - secondsPassed;
-            var min = Math.floor(s / 60);
-            return String(min).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0');
-        }
     }]);
 
     return Game;
@@ -1984,12 +2004,12 @@ var Game = function () {
 
 /***/ }),
 
-/***/ 330:
+/***/ 331:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Protester_js__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__constants_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__constants_js__ = __webpack_require__(18);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
@@ -2077,9 +2097,6 @@ var Player = function (_Protester) {
         fovGroup.add(_this.circleGraphics);
 
         // events
-        _this.sprite.events.onInputDown.add(_this.handleClickOnSelf, _this);
-        _this.sprite.input.priorityID = 2;
-
         _this.game.onResume.add(_this.handleGameResume, _this);
 
         _this.keys = {
@@ -2206,7 +2223,6 @@ var Player = function (_Protester) {
 
                         this.sprite.body.collideWorldBounds = false;
 
-                        this.sprite.events.onInputDown.removeAll();
                         this.cooldownTimer.stop(true);
                         break;
                     }
@@ -2290,7 +2306,6 @@ var Player = function (_Protester) {
         key: 'freeze',
         value: function freeze() {
             if (this.sprite.alive) {
-                this.sprite.events.onInputDown.removeAll();
                 this.moveTo(null);
             }
 
@@ -2313,12 +2328,12 @@ var Player = function (_Protester) {
 
 /***/ }),
 
-/***/ 331:
+/***/ 332:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Protester_js__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__constants_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__constants_js__ = __webpack_require__(18);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -2551,13 +2566,13 @@ var NPCProtester = function (_Protester) {
 
 /***/ }),
 
-/***/ 332:
+/***/ 333:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Prefab_js__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FOV_js__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constants_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constants_js__ = __webpack_require__(18);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -2619,10 +2634,6 @@ var Cop = function (_Prefab) {
             }
             this.setSpeed(newSpeed);
 
-            if (this.mode === __WEBPACK_IMPORTED_MODULE_2__constants_js__["a" /* COP_MODE_CONVOY */] && !this.target.alive) {
-                this.setMode(__WEBPACK_IMPORTED_MODULE_2__constants_js__["d" /* COP_MODE_WANDER */], { coords: this.returnCoords });
-            }
-
             _get(Cop.prototype.__proto__ || Object.getPrototypeOf(Cop.prototype), 'update', this).call(this);
 
             this.FOV.update({
@@ -2679,7 +2690,9 @@ var Cop = function (_Prefab) {
 
                         this.FOV.kill();
                         this.returnCoords = { x: this.sprite.x, y: this.sprite.y };
-                        this.moveTo(jailCoords);
+                        this.moveTo(_extends({}, jailCoords, {
+                            callback: this.handleCovoyEnd.bind(this)
+                        }));
                         break;
                     }
                 case __WEBPACK_IMPORTED_MODULE_2__constants_js__["b" /* COP_MODE_ENTER */]:
@@ -2698,6 +2711,15 @@ var Cop = function (_Prefab) {
             }
 
             _get(Cop.prototype.__proto__ || Object.getPrototypeOf(Cop.prototype), 'setMode', this).call(this, mode);
+        }
+    }, {
+        key: 'handleCovoyEnd',
+        value: function handleCovoyEnd() {
+            for (var i = 0; i < this.sprite.children.length; i++) {
+                this.sprite.getChildAt(i).mz.kill();
+            }
+
+            this.setMode(__WEBPACK_IMPORTED_MODULE_2__constants_js__["d" /* COP_MODE_WANDER */], { coords: this.returnCoords });
         }
     }, {
         key: 'wander',
@@ -2764,13 +2786,13 @@ var Cop = function (_Prefab) {
 
 /***/ }),
 
-/***/ 333:
+/***/ 334:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Prefab_js__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FOV_js__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constants_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constants_js__ = __webpack_require__(18);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -2949,11 +2971,11 @@ var Journalist = function (_Prefab) {
 
 /***/ }),
 
-/***/ 334:
+/***/ 335:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants_js__ = __webpack_require__(18);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -3082,11 +3104,11 @@ var SWATSquad = function () {
 
 /***/ }),
 
-/***/ 335:
+/***/ 336:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants_js__ = __webpack_require__(18);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -3183,7 +3205,102 @@ var Shield = function () {
 
 /***/ }),
 
-/***/ 336:
+/***/ 337:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__objects_ScoreMeter_js__ = __webpack_require__(338);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
+
+var GameInterface = function () {
+    function GameInterface(_ref) {
+        var game = _ref.game,
+            onTogglePoster = _ref.onTogglePoster;
+
+        _classCallCheck(this, GameInterface);
+
+        this.game = game;
+        this.onTogglePoster = onTogglePoster;
+
+        this.group = this.game.add.group();
+        this.group.fixedToCamera = true;
+
+        this.score = new __WEBPACK_IMPORTED_MODULE_0__objects_ScoreMeter_js__["a" /* default */]({
+            game: this.game,
+            x: this.game.width / 2,
+            y: this.game.height - 20,
+            width: 300
+        });
+        this.group.add(this.score.group);
+
+        this.textTimer = this.game.add.text(this.game.width - 10, 20, '', {
+            font: '25px Arial',
+            fill: '#fff'
+        });
+        this.textTimer.anchor.set(1, 0.5);
+        this.textTimer.setShadow(2, 2, 'rgba(0, 0, 0, .8)', 0);
+        this.group.add(this.textTimer);
+
+        this.buttonSound = this.game.add.button(0, 0, 'soundButtons', this.handleClickSound, this, 1, 1, 1, 1, this.group);
+
+        if (Phaser.Device.touch) {
+            this.buttonPoster = this.game.add.button(20, this.game.height - 20, 'posterButton', this.handleTogglePoster, this, 1, 1, 1, 1, this.group);
+            this.buttonPoster.anchor.set(0, 1);
+            this.buttonPoster.input.priorityID = 2;
+        }
+    }
+
+    _createClass(GameInterface, [{
+        key: 'update',
+        value: function update(_ref2) {
+            var score = _ref2.score,
+                protestersAlive = _ref2.protestersAlive,
+                protestersTotal = _ref2.protestersTotal,
+                meanMood = _ref2.meanMood;
+
+            this.buttonSound.frame = this.game.sound.mute ? 1 : 0;
+
+            this.score.update({
+                score: score,
+                protestersAlive: protestersAlive,
+                protestersTotal: protestersTotal,
+                mood: 100 * meanMood
+            });
+        }
+    }, {
+        key: 'updateTimer',
+        value: function updateTimer(time) {
+            this.textTimer.setText(time);
+        }
+    }, {
+        key: 'handleClickSound',
+        value: function handleClickSound() {
+            this.game.sound.mute = !this.game.sound.mute;
+        }
+    }, {
+        key: 'handleTogglePoster',
+        value: function handleTogglePoster() {
+            this.onTogglePoster();
+        }
+    }, {
+        key: 'kill',
+        value: function kill() {
+            this.group.killAll();
+        }
+    }]);
+
+    return GameInterface;
+}();
+
+/* harmony default export */ __webpack_exports__["a"] = (GameInterface);
+
+/***/ }),
+
+/***/ 338:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3196,9 +3313,7 @@ var ScoreMeter = function () {
         var game = _ref.game,
             x = _ref.x,
             y = _ref.y,
-            width = _ref.width,
-            parentGroup = _ref.parentGroup,
-            winPoint = _ref.winPoint;
+            width = _ref.width;
 
         _classCallCheck(this, ScoreMeter);
 
@@ -3208,40 +3323,125 @@ var ScoreMeter = function () {
         this.group.x = x;
         this.group.y = y;
         this.width = width;
-        this.winPoint = winPoint;
-        parentGroup.add(this.group);
 
-        this.progressBar = this.game.add.graphics();
-        this.group.add(this.progressBar);
-        // this.label = this.game.add.text(
-        //     -280,
-        //     0,
-        //     'Score:',
+        this.scoreMeter = this.game.add.graphics();
+        this.group.add(this.scoreMeter);
+
+        this.moodMeter = this.game.add.graphics();
+        this.group.add(this.moodMeter);
+
+        this.aliveMeter = this.game.add.graphics();
+        this.group.add(this.aliveMeter);
+
+        this.label = this.game.add.text(-this.width / 2 + 20, -8, 'Protest meter', {
+            font: '12px Arial',
+            fill: '#000',
+            align: 'right'
+        });
+        this.group.add(this.label);
+
+        // this.moodNumber = this.game.add.text(
+        //     this.width / 2 - 5,
+        //     7,
+        //     '0',
         //     {
-        //         font: '14px Arial',
-        //         fill: '#000',
-        //         align: 'right'
+        //         font: '10px Arial',
+        //         fill: '#000'
         //     }
         // );
-        // this.group.add(this.label);
+        // this.moodNumber.anchor.set(1, 0);
+        // this.group.add(this.moodNumber);
+        //
+        // this.aliveNumber = this.game.add.text(
+        //     -5,
+        //     7,
+        //     '0',
+        //     {
+        //         font: '10px Arial',
+        //         fill: '#000'
+        //     }
+        // );
+        // this.aliveNumber.anchor.set(1, 0);
+        // this.group.add(this.aliveNumber);
     }
 
     _createClass(ScoreMeter, [{
-        key: "update",
-        value: function update(value) {
-            this.progressBar.clear();
-            value = this.game.math.clamp(value, 0, 100);
-            var height = 10;
-            var x = 0;
-            var y = 0;
-            this.progressBar.lineStyle(2, 0x333333, 1);
-            this.progressBar.drawRect(x, y - height, this.width, height);
-            this.progressBar.lineStyle(height, 0x00ff00, 1);
-            this.progressBar.moveTo(x, y - height / 2);
-            this.progressBar.lineTo(x + Math.round(this.width * value / 100), y - height / 2);
-            this.progressBar.lineStyle(3, 0xffff00, 1);
-            this.progressBar.moveTo(x + Math.round(this.width * this.winPoint / 100), y - height);
-            this.progressBar.lineTo(x + Math.round(this.width * this.winPoint / 100), y);
+        key: 'update',
+        value: function update(_ref2) {
+            var score = _ref2.score,
+                mood = _ref2.mood,
+                protestersAlive = _ref2.protestersAlive,
+                protestersTotal = _ref2.protestersTotal;
+
+            this.updateScoreMeter(score);
+            this.updateAliveMeter(protestersAlive, protestersTotal);
+            this.updateMoodMeter(mood);
+        }
+    }, {
+        key: 'updateScoreMeter',
+        value: function updateScoreMeter(value) {
+            this.updateMeter({
+                graphics: this.scoreMeter,
+                value: value,
+                width: this.width,
+                height: 16,
+                x: -this.width / 2,
+                y: 0,
+                colorThreshold: 30
+            });
+        }
+    }, {
+        key: 'updateAliveMeter',
+        value: function updateAliveMeter(protestersAlive, protestersTotal) {
+            this.updateMeter({
+                graphics: this.aliveMeter,
+                value: 100 * protestersAlive / protestersTotal,
+                width: this.width / 2 - 1,
+                height: 6,
+                x: -this.width / 2,
+                y: 13,
+                colorThreshold: 50
+            });
+
+            // this.aliveNumber.setText(`${protestersAlive} / ${protestersTotal}`);
+        }
+    }, {
+        key: 'updateMoodMeter',
+        value: function updateMoodMeter(value) {
+            this.updateMeter({
+                graphics: this.moodMeter,
+                value: value,
+                width: this.width / 2 - 1,
+                height: 6,
+                x: 1,
+                y: 13,
+                colorThreshold: 50
+            });
+
+            // this.moodNumber.setText(Math.round(value));
+        }
+    }, {
+        key: 'updateMeter',
+        value: function updateMeter(_ref3) {
+            var graphics = _ref3.graphics,
+                value = _ref3.value,
+                width = _ref3.width,
+                height = _ref3.height,
+                x = _ref3.x,
+                y = _ref3.y,
+                colorThreshold = _ref3.colorThreshold;
+
+            graphics.clear();
+
+            var color = Phaser.Color.RGBArrayToHex([this.game.math.clamp(1 + (colorThreshold - value) / (100 - colorThreshold), 0, 1), this.game.math.clamp(value / colorThreshold, 0, 1), 0]);
+
+            graphics.lineStyle(height, 0xffffff, 0.9);
+            graphics.moveTo(x, y);
+            graphics.lineTo(x + width, y);
+
+            graphics.lineStyle(height, color, 1);
+            graphics.moveTo(x, y);
+            graphics.lineTo(x + Math.round(width * value / 100), y);
         }
     }]);
 
@@ -3252,7 +3452,7 @@ var ScoreMeter = function () {
 
 /***/ }),
 
-/***/ 337:
+/***/ 339:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3308,14 +3508,17 @@ var PauseMenu = function () {
 
 /***/ }),
 
-/***/ 338:
+/***/ 340:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants_js__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_js__ = __webpack_require__(341);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
 
 
 
@@ -3403,8 +3606,7 @@ var EndMenu = function () {
             this.sprite.addChild(title);
 
             if (this.mode !== __WEBPACK_IMPORTED_MODULE_0__constants_js__["g" /* END_GAME_TIME_OUT */]) {
-                var timeString = String(Math.floor(this.stats.time / 60)).padStart(2, '0') + ':' + String(this.stats.time % 60).padStart(2, '0');
-                var time = this.game.add.text(40, 100, 'Your time: ' + timeString, {
+                var time = this.game.add.text(40, 100, 'Your time: ' + __WEBPACK_IMPORTED_MODULE_1__utils_js__["a" /* getFormattedTime */](this.stats.time), {
                     font: '24px Arial',
                     fill: '#fff'
                 });
@@ -3426,11 +3628,29 @@ var EndMenu = function () {
 
 /***/ }),
 
+/***/ 341:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = getFormattedTime;
+function getFormattedTime(seconds) {
+    return String(Math.floor(seconds / 60)).padStart(2, '0') + ':' + String(seconds % 60).padStart(2, '0');
+}
+
+/***/ }),
+
+/***/ 342:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/d75ac66b714b8f2e53ccbf82f8fe4974.png";
+
+/***/ }),
+
 /***/ 83:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants_js__ = __webpack_require__(18);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
